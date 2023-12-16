@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(221, 100%, 96%);
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    font-size: 1.2rem;
+}
+
+.result {
+
+    font-size: 25px;
+}
+
+.cartaoRoxo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsl(252, 100%, 67%));
+    font-size: 18px;
+    text-transform: capitalize;
+    position: relative;
+    left: 10px;
+
+}
+
+.cartaoRoxo H1 {
+    color: hsl(0, 0%, 100%);
+}
+
+.cor {
+
+    color: hsl(241, 100%, 89%);
+}
+
+.circulo {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 45px;
+    border-radius: 50%;
+    background: linear-gradient(rgb(59, 8, 199), hsla(241, 72%, 46%, 0));
+}
+
+.cem {
+    display: block;
+    font-size: 14px;
+    color: hsl(241, 100%, 89%);
+}
+
+.textoColorido {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
+    border-radius:10px;
+}
+
+.textoColorido p {
+
+    display: inline;
+}
+
+.reaction,
+.memory,
+.visual,
+.verbal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.reaction {
+
+    background: hsl(0, 100%, 67%, 0.150);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.memory {
+    background: hsl(39, 100%, 56%, 0.150);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.verbal {
+
+    background: hsl(166, 100%, 37%, 0.150);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.visual {
+    background: hsl(234, 85%, 45%, 0.150);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.icones {
+
+    position: relative;
+    top: 5px;
+    right: 5px;
+
+}
+
+
+
+button {
+    cursor: pointer;
+    align-self: center;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%)
+
+}
+
+button:hover {
+    background: rgba(78, 33, 202, 0.89);
+    transition: 6000ms;
+
+}
+
+@media (max-width:650px) {
+
+    .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+           width: 90vw;
+
+    }
+  
+
+
+
+.cartaoRoxo {
+
+    box-shadow: 1px 0 2px black;
+    position: static;
+}
+}
